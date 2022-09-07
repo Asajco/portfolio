@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1658259a.css",
+    "main.js": "/portfolio/static/js/main.27554474.js",
+    "static/media/header-wallpaper.png": "/portfolio/static/media/header-wallpaper.80c45604e792a250a676.png",
+    "static/media/footer-wallpaper.png": "/portfolio/static/media/footer-wallpaper.f85000739271249563e8.png",
+    "static/media/music-ast.png": "/portfolio/static/media/music-ast.9a6835237f5c71899867.png",
+    "static/media/recipe-ast.png": "/portfolio/static/media/recipe-ast.171754d9041eecb6e9d2.png",
+    "static/media/balloon.png": "/portfolio/static/media/balloon.91d653b88d11390f3daa.png",
+    "static/media/flying-ast.png": "/portfolio/static/media/flying-ast.46137e005d6e51f6d3e5.png",
+    "static/media/react-logo.png": "/portfolio/static/media/react-logo.91a9a5298ee9689fdd55.png",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.660b1370d0471f345924.png",
+    "static/media/html-logo.png": "/portfolio/static/media/html-logo.d151ecbb7b69d17863d6.png",
+    "static/media/firebase.png": "/portfolio/static/media/firebase.a149232308a20ac836d7.png",
+    "static/media/css.png": "/portfolio/static/media/css.fa6baaca981b6c887876.png",
+    "index.html": "/portfolio/index.html",
+    "main.1658259a.css.map": "/portfolio/static/css/main.1658259a.css.map",
+    "main.27554474.js.map": "/portfolio/static/js/main.27554474.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1658259a.css",
+    "static/js/main.27554474.js"
+  ]
+}
