@@ -1,0 +1,23 @@
+.heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Patua One";
+    font-style: normal;
+    font-size: 38px;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.line{
+    width: 45%;
+    height: 3px;
+    background-image: linear-gradient(to right, #3E51FF, #CB38FF) ;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+}

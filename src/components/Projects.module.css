@@ -1,0 +1,18 @@
+.projects-container{
+    position: relative;
+    margin-bottom: 4rem;
+}
+.projects-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-tech{
+    display: flex;
+    font-family: "Patua One";
+    justify-content: space-evenly;
+    font-size: large;
+    align-items: left;
+    line-height: 2rem;
+}

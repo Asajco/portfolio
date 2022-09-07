@@ -1,0 +1,119 @@
+@keyframes right-to-left {
+    from{
+        margin-right: -50rem ;
+    }
+    to{
+        margin-right: 3rem
+    }
+}  
+.form-container{   
+    display: flex;
+    flex-direction: column;
+    font-family: "Patua One";
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.form-container input{
+    font-family: "Roboto", regular;
+    height: 2rem;
+    padding: 0.5rem;
+    width: 120%;
+    outline: none;
+    border-radius: 0.3rem;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.form-container textarea {
+    font-family: "Roboto";
+    height: 8rem;
+    width: 120%;
+    outline: none;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    padding: 1rem;
+    transition: 1s;
+}
+::placeholder{
+    font-family: "Roboto";
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+    
+}
+.form-button{
+    width: 70%;
+    height: 2rem;
+    font-family: "Patua One";
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    opacity:0.8;
+}
+.form-button:hover{
+    opacity: 1;
+    
+}
+
+.form-container label{
+    font-family: "Patua One", regular;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.error-message{
+    font-family: "Roboro", regular;
+    color: red;
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-popup-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    height: 3rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-right: 2.3rem;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    animation: right-to-left 2s ease-in-out;  
+}
+
+.form-input:focus{
+    font-family: "Roboto", regular;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {  
+    .form-container{
+       margin-top: -5rem;  
+    }
+    
+    .form-container input{
+        width: 90%;
+    }
+    .form-container textarea{
+        width: 90%;
+    }
+    .form-button{
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+    .form-container label{
+        font-size: 1.4rem;
+    }
+}
+    

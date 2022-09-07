@@ -1,0 +1,117 @@
+.hero-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/header-wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+.flying-ast{
+    position: absolute;
+    right: -300px;
+    rotate: -30deg;
+    width: 220px;
+    height: 220px;
+    animation: flying 2.5s infinite ease-in-out ;
+    animation-delay: 2s;
+}
+
+.hero-text-wrapper{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: white;
+}
+
+.hero-heading{
+    font-family: "Patua One", regular;
+    font-size: 60px;
+}
+
+.hero-text-wrapper > p {
+    width: 25rem;
+    font-family: "Roboto", black;
+    font-size: 19px;
+    
+}
+
+@keyframes to-right {
+    from{
+        margin-left: -300px;
+    }
+    to{
+        margin: 0;
+    }
+}
+
+@keyframes flying {
+    0% {
+        right: 0;
+        display: block;
+        margin-right: 0px;
+    } 
+    35%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    
+    67%{
+        transform: rotate(-10deg);
+    }
+    100%{    
+        display: block;
+        margin-right: 100rem;
+    }  
+}
+
+@media only screen and (max-width: 988px) {
+    .hero-text-wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .hero-text-wrapper > p {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-text-wrapper{
+        position: absolute;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-heading{
+        font-size: 40px;
+        width: 15rem;
+    }
+    .hero-text-wrapper > p {
+        text-align: justify;
+        width: 20rem;
+        font-size: 17px;
+    }
+    .flying-ast{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-text-wrapper > p {
+        width: 15rem;
+        top: 0;
+    }
+}
+    
