@@ -8,7 +8,7 @@ function Slide(props) {
       <div className={styles['middle']}>
         <div>{props.tech}</div>
         <div className={styles['project-links']}>
-          <a href={props.demo}>live demo</a>
+          <a href={props.demo} target="_blank" rel="noreferrer">live demo</a>
           <a href={props.github} target="_blank" rel="noreferrer">
             GitHub link
           </a>
