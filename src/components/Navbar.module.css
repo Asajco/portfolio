@@ -18,12 +18,12 @@
 }
 .navbar-logo {
   color: white;
-  font-family: 'Monda';
+  font-family: "Patua One";
   font-size: 34px;
   margin-right: 15rem;
   margin-left: 2rem;
   cursor: default;
-  align-self: center;
+  
 }
 .navbar-links-wrapper {
   display: flex;

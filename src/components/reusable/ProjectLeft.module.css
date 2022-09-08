@@ -11,6 +11,7 @@
   height: 250px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 0.5rem;
 }
 
@@ -19,7 +20,6 @@
   font-style: normal;
   font-size: 28px;
   margin-bottom: 0.5rem;
-  margin-top: 2rem;
   align-self: center;
 }
 
@@ -27,6 +27,7 @@
   font-family: 'Roboto';
   text-align: justify;
   padding: 1rem;
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 768px) {
