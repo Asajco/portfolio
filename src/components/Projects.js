@@ -3,6 +3,7 @@ import styles from './Projects.module.css'
 import Heading from './reusable/Heading'
 import ProjectRight from './reusable/ProjectRight'
 import ProjectLeft from './reusable/ProjectLeft'
+import {motion} from "framer-motion"
 
 function Projects() {
   const [voiddTech] = React.useState([
@@ -17,7 +18,9 @@ function Projects() {
   return (
     <div className={styles['projects-container']} id="projects">
       <Heading heading="my projects" />
-      <div className={styles['projects-wrapper']}>
+      <motion.div className={styles['projects-wrapper']} initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}>
         <ProjectRight
           title="Voidd"
           about="The core functionality is users being able to buy tickets for currently offered events as well as creating their own events if the premium account is bought.
@@ -44,7 +47,7 @@ function Projects() {
           demo="https://asajco.github.io/recipes-web/"
           github="https://github.com/Asajco/recipes-web"
         />
-      </div>
+      </motion.div>
     </div>
   )
 }

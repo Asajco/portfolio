@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import { useForm } from 'react-hook-form'
 import styles from './Form.module.css'
 import Heading from './reusable/Heading'
+import {motion} from "framer-motion"
 
 function Form() {
   const [showPopup, setShowPopup] = useState(false)
@@ -53,7 +54,12 @@ function Form() {
   }
 
   return (
-    <div id="contact">
+    <motion.div
+      id="contact"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <form
         onSubmit={handleSubmit(sendEmail)}
         className={styles['form-container']}
@@ -106,7 +112,7 @@ function Form() {
           Thank you for your message!
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }
 

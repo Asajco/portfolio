@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import styles from './Navbar.module.css'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Navbar() {
   const github = require('../assets/github.png')
@@ -12,11 +13,14 @@ function Navbar() {
     <>
       <nav className={styles['navbar-container']}>
         <div className={styles['navbar-logo']}>J P</div>
-
-        <div
+        <AnimatePresence exitBeforeEnter={true} onExitComplete={()=> null}>
+        <motion.div
           className={
             click ? styles['navbar-responsive'] : styles['navbar-links-wrapper']
           }
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
         >
           <Link
             to="hero"
@@ -59,7 +63,8 @@ function Navbar() {
               onClick={() => setClick(!click)}
             />
           )}
-        </div>
+        </motion.div>
+        </AnimatePresence>
         <div className={styles['navbar-socials']}>
           <a href="https://github.com/Asajco" target="_blank" rel="noreferrer">
             <img src={github} alt="github" />

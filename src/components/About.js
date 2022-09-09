@@ -1,11 +1,17 @@
 import React from 'react'
 import styles from './About.module.css'
 import Heading from './reusable/Heading'
+import { motion } from 'framer-motion'
 
 function About() {
   return (
     <>
-      <div className={styles['about-wrapper']}>
+      <motion.div
+        className={styles['about-wrapper']}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
         <Heading heading="about" />
         <div className={styles['about-text-wrapper']}>
           <p>
@@ -21,7 +27,7 @@ function About() {
             <b>web development</b> .
           </p>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
